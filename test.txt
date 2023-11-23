@@ -1,9 +1,0 @@
-pull測試
-Hello
-
-push測試
-zzkk
-
-
-Conflict test
-
