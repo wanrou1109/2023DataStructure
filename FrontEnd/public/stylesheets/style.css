@@ -34,10 +34,17 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+<<<<<<< Updated upstream
   border: hsl(0, 0%, 100%);
   border-radius: 20px;
   padding: 8px 15px;
 
+=======
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 8px 15px;
+>>>>>>> Stashed changes
 }
 
 .title {
