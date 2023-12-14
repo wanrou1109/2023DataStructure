@@ -9,22 +9,19 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-public class Calculator {
+public class InputHandler {
     
-    static class Numbers {
-        private int firstNum;
-        private int secondNum;
+    static class Input {
+        private String input;
+       
+        public String getInput() { return input; }
 
-        public int getFirstNum() { return firstNum; }
-        public int getSecondNum() { return secondNum; }
-
-        public void setFirstNum(int data) { firstNum = data; }
-        public void setSecondNum(int data) { secondNum = data; }
+        public void setInput(String data) { input = data; }
     }
 
     @PostMapping("/add")
-    public Map<String, Integer> addNumbers(@RequestBody Numbers numbers) {
-        int result = numbers.getFirstNum() + numbers.getSecondNum();
+    public Map<String, String> addNumbers(@RequestBody Input input) {
+        String result = "Your input is: " + input.getInput();
         return Collections.singletonMap("result", result);
     }
 }

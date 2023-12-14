@@ -3,33 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/style.css">
     <title>簡易搜尋引擎</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-        }
-        .search-box {
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="project-title">專案主題</h1>
-        <input type="number" id = "first-num" placeholder = "輸入第一個數">
-        <input type="number" id = "second-num" placeholder = "輸入第二個數">       
-        <p></p><button type="button" id="add-button" class = "search-button">相加</button>
-        <p>使用這個簡易搜尋引擎，你可以輸入任何關鍵字進行搜尋。結果將基於你的輸入進行加權排序，幫助你快速找到相關的資源。</p>
+        <div class="title">
+            <h1 id="project-title">Project Title</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id = "user-input" placeholder = "輸入關鍵字">
+            <button type="'button" id="search-button">搜尋</button>
+        </div>
+        <h3>Function and user tutorial of this search engine</h3>
     </div>
     <script src = "javascripts/test.js"></script>
 </body>

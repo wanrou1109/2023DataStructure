@@ -1,6 +1,5 @@
-document.getElementById('add-button').addEventListener('click', function(){
-    let firstNum = parseInt(document.getElementById("first-num").value);
-    let secondNum = parseInt(document.getElementById("second-num").value);
+document.getElementById('search-button').addEventListener('click', function(){
+    let input = document.getElementById("user-input").value;
     
     fetch('http://localhost:8080/add', {
         method: 'POST',
@@ -8,8 +7,7 @@ document.getElementById('add-button').addEventListener('click', function(){
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            firstNum: firstNum,
-            secondNum: secondNum
+            input: input
         })
     })
     .then(response => response.json())
